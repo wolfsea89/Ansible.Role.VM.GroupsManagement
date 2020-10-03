@@ -1,0 +1,6 @@
+---
+- name: Create groups
+  include_tasks: create_group.yml
+  loop: "{{ groups_on_host }}"
+  loop_control:
+    loop_var: group_param

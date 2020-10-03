@@ -1,0 +1,12 @@
+- name: "Create group {{ group_param.name }}"
+  group:
+    name: "{{ group_param.name }}"
+    state: present
+  when: 
+    - group_param.state == "present"
+
+- name: "Delete group_param {{ group_param.name }}"
+  group:
+    name: "{{ group_param.name }}"
+    state: absent
+  when: group_param.state == "absent"

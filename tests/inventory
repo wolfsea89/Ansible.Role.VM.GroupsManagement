@@ -1,0 +1,9 @@
+localhost:
+  vars:
+    groups_on_host:
+    - name: adm
+      state: present
+    - name: sudo
+      state: present
+    - name: docker
+      state: present

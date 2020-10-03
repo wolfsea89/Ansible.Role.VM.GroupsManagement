@@ -1,15 +1,15 @@
 Ansible.Role.System.IdentityManagement
 =========
 
-This role creates system groups
+Rola zakładająca i usuwająca grupy systemowe
 
-Language: [EN](README.md), [PL](README.PL.md)
+Język: [EN](README.md), [PL](README.PL.md)
 
-Role Variables
+Zmiene w Roli:
 --------------
 requires:
 ```
-    groups_on_host: # List group on serwer
+    groups_on_host: # List group do założenie i/lub usunięcia
 ```
 
 var `groups_on_host` example:
@@ -23,10 +23,10 @@ groups_on_host:
       state: absent
 ```
 
-Example Playbook
+Przykładowy Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Przykładowe użycie roli
 ```
 - hosts: localhost
   remote_user: root
@@ -44,7 +44,7 @@ Including an example of how to use your role (for instance, with variables passe
             state: absent
 ```
 
-Testing
+Testowane
 ------------
 
 Testing on:
@@ -54,12 +54,12 @@ Testing on:
   - Centos 7
   - Centos 8
 
-License
+Licencja
 -------
 
 BSD
 
-Author Information
+Autor
 ------------------
  **Maciej Rachuna**
 ##### System Administrator & DevOps Engineer
